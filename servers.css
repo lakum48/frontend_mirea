@@ -1,0 +1,210 @@
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Ширина модального окна */
+    height: 50%;
+}
+
+.close {
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+header{
+    height: 100px;
+    background-color: cadetblue;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-content{
+
+    display: flex; /* Используем Flexbox для формы */
+    flex-direction: column; /* Вертикальная ориентация */
+    height: 100%; /* Занимаем всю высоту родителя */
+
+    
+}
+.content{
+    width: 60%;
+    margin-left: 20%;
+    display:flex;
+    justify-content: space-between;
+}
+.styles{
+
+    text-align: center;
+}
+body {
+    background-color: cadetblue;
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    line-height: 1.6; /* Высота строки */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    background-color: #f4f4f4; /* Цвет фона */
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    color: #333; /* Цвет заголовков */
+}
+
+/* Стили для навигации */
+.header-nav nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    margin-left: 10px;
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.header-nav nav ul li {
+    display: inline; /* Выводим элементы в строку */
+    margin-right: 15px; /* Отступ между элементами */
+}
+
+.header-nav nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет ссылок */
+}
+
+.header-nav nav ul li a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+.asidee ul{
+    list-style: none; /* Убираем маркеры списка */
+    margin-left: 10px;
+    padding: 0; /* Убираем внутренние отступы */
+}
+.asidee ul li a{
+    text-decoration: none;
+    color: #333; /* Убираем подчеркивание */
+}
+.asidee ul li a:hover{
+    text-decoration: underline;
+}
+.Name-group{
+    padding-bottom: 5px;
+    float: right;
+}
+.Name-group p{
+    margin: 0;
+}
+
+
+.main-header{
+    border-bottom: solid 2px #333;
+}
+
+.footerr{
+    height: 120px;
+    border-top: solid 2px black;
+     text-align: center; /* Выравнивание текста по центру */
+     padding: 10px; /* Внутренние отступы */
+     background: cadetblue; /* Цвет фона */
+     color: #fff; /* Цвет текста */
+     position: relative; /* Позиционирование */
+     bottom: 0; /* Прижатие к низу */
+     width: 100%; /* Ширина на всю страницу */
+ }
+
+
+.img-visit{
+    height: 100%;
+    width: 100%;
+}
+.container {
+    border-top: #333 2px solid;
+    background-color: cadetblue;
+    display: flex; /* Используем Flexbox для размещения навигации и контента в ряд */
+    padding: 20px;
+}
+
+.asidee {
+    width: 200px; /* Ширина боковой панели */
+    margin-right: 30px; /* Отступ между навигацией и карточками */
+    border-right:solid 2px black ;
+}
+
+main {
+    height: 100%;
+    margin-top: -25px;
+    flex: 1; /* Занимает оставшееся пространство */
+
+}
+.content{
+    margin-left: 20px;
+}
+.section {
+    border: 5px solid white; /* Толщина и цвет рамки */
+    padding: 100px; /* Отступ между рамкой и изображением */
+    height:180px;
+    width: 150px;
+    margin-right: 65px;
+
+   
+   
+}
+.section1{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-word {
+    text-align: center;
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+
+
+ footer p{
+    color: #333;
+ }
+
+ .modal-content {
+    background-color: cadetblue      ;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Увеличиваем ширину модального окна */
+    height: auto; /* Автоматическая высота */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.3s ease; /* Плавный переход */
+}
+
+.modal-content:hover {
+    transform: scale(1.02); /* Увеличение при наведении */
+}
+.section {
+    margin-left:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid white; /* Толщина и цвет рамки */
+    padding: 10px; /* Отступ между рамкой и изображением */
+    height: 200px; /* Увеличиваем высоту секции */
+  }
+  
+
+
+  
