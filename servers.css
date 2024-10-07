@@ -202,9 +202,72 @@ main {
     align-items: center;
     border: 5px solid white; /* Толщина и цвет рамки */
     padding: 10px; /* Отступ между рамкой и изображением */
-    height: 200px; /* Увеличиваем высоту секции */
+    height: 300px; /* Увеличиваем высоту секции */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px ;
+    overflow: hidden;
   }
   
+.img-visit{
+    width: 220px;
+    height: 320px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.card-body{
+    margin-right: 70px; 
+    margin-top: 83px;
+    width: 220px;
+    height: 320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
 
-
-  
+.section:hover .card-body{
+    opacity: 1;
+    visibility: visible;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14x;
+    font-weight: 300;
+    color: white;
+}
+.card-info{
+    text-transform: capitalize;
+    font-size: 14x;
+    font-weight: 400;
+    color: white;
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background:#1f3d4738;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 50%;
+    text-align: left;
+}
